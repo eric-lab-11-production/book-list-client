@@ -14,6 +14,5 @@ var app = app || {};
 })(app);
 
 $(function() {
-  console.log('in IIFE?');
   app.Book.fetchAll(app.bookView.initIndexPage);
-})
+})();
