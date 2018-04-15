@@ -31,7 +31,7 @@ ENV.apiUrl = ENV.isProduction ? ENV.productionApiUrl : ENV.devlopmentApiUrl;
   };
 
   Book.fetchAll = callback =>
-    $.get(`${ENV.apiUrl}/test`)
+    $.get(`${ENV.apiUrl}/books`)
       .then(Book.loadAll)
       .then(callback)
       .catch(errorCallBack);
