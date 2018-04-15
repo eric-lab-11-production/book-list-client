@@ -12,7 +12,7 @@ ENV.apiUrl = ENV.isProduction ? ENV.productionApiUrl : ENV.devlopmentApiUrl;
 
   function errorCallBack(err) {
     console.error(err);
-    //module.errorView.initErrorPage(err);
+    module.errorView.initErrorPage(err);
   }
 
   function Book(bookData) {
@@ -31,7 +31,7 @@ ENV.apiUrl = ENV.isProduction ? ENV.productionApiUrl : ENV.devlopmentApiUrl;
   };
 
   Book.fetchAll = callback =>
-    $.get(`${ENV.apiUrl}/test`)
+    $.get(`${ENV.apiUrl}/books`)
       .then(Book.loadAll)
       .then(callback)
       .catch(errorCallBack);
