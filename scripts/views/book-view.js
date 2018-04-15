@@ -15,4 +15,4 @@ var app = app || {};
 
 $(function() {
   app.Book.fetchAll(app.bookView.initIndexPage);
-})();
+});
