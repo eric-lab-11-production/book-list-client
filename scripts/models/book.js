@@ -12,7 +12,7 @@ ENV.apiUrl = ENV.isProduction ? ENV.productionApiUrl : ENV.devlopmentApiUrl;
 
   function errorCallBack(err) {
     console.error(err);
-    //module.errorView.initErrorPage(err);
+    module.errorView.initErrorPage(err);
   }
 
   function Book(bookData) {
