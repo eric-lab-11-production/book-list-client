@@ -15,10 +15,30 @@
         height: 5em;
     }
 
+    header>img {
+        width: 2.5em;
+        float: left;
+        margin-top: 1em;
+        margin-left: 1em;
+    }
+
+    header>p {
+        font-size: 1.3em;
+        padding-top: 1.2em;
+        padding-left: 3em;
+        color: grey;
+    }
+
     section {
         width: 95%;
         height: 50%;
         margin: 1em auto;
+    }
+
+    .about>p {
+        margin-top: 2em;
+        padding-left: 0.5em;
+        margin-bottom: 0em;
     }
 
     .book {
@@ -43,11 +63,11 @@
         display: table;
     }
 
-    h1 {
+    #book-info>h1 {
         color: grey;
         font-size: 1.2em;
         margin: 0 0.8em;
-        padding-top: 0.5em;
+        padding-top: 0.7em;
     }
 
     #book-info>p {
@@ -61,6 +81,18 @@
 
     footer{
         background: gray;
-        height: 8em;
+        height: 4em;
+    }
+
+    footer>ul li {
+        float: right;
+        list-style-type: none;
+        margin-top: 0.7em;
+        margin-right: 0.5em;
+    }
+    
+    a {
+        text-decoration: none;
+        color: rgb(63, 63, 63);
     }
 }
