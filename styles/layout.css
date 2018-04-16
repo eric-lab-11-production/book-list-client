@@ -1,4 +1,5 @@
 @import 'base.css';
+@import 'icons.css';
 
 
 @media screen and (max-width: 500px) {
@@ -17,15 +18,23 @@
     section {
         width: 95%;
         height: 50%;
-        border: 1px solid black;
         margin: 1em auto;
     }
 
     .book {
         background: gray;
     }
+
+    .book>img {
+        display: inline-block;
+        margin-top: 0.5em;
+        margin-left: 30%;
+        z-index: -1;
+    }
+
     #book-info {
         background: rgb(63, 63, 63);
+        z-index: 1
     }
 
     .clearfix::after {
@@ -38,11 +47,16 @@
         color: grey;
         font-size: 1.2em;
         margin: 0 0.8em;
+        padding-top: 0.5em;
     }
 
     #book-info>p {
         color: grey;
         margin: 0 1em;
+    }
+
+    #book-info>p:last-child{
+        padding-bottom: 4em;
     }
 
     footer{
