@@ -1,1 +1,42 @@
 @import 'base.css';
+
+
+@media screen and (max-width: 500px) {
+
+    #wrapper {
+        width: 90%;
+        background: lightgrey;
+        margin: 0 auto;
+    }
+
+    section {
+        width: 95%;
+        height: 50%;
+        border: 1px solid black;
+        margin: 1em auto;
+    }
+
+    .book {
+        background: gray;
+    }
+    #book-info {
+        background: rgb(63, 63, 63);
+    }
+
+    .clearfix::after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+
+    h1 {
+        color: grey;
+        font-size: 1.2em;
+        margin: 0 0.8em;
+    }
+
+    #book-info>p {
+        color: grey;
+        margin: 0 1em;
+    }
+}

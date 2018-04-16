@@ -7,25 +7,35 @@
     <title>Book App</title>
     <link rel="stylesheet" href="styles/layout.css"/>
     <script id="book-list-template" type="text/x-handlebars-template">
-        <section>
+        <section class="book">
             <img src="{{image_url}}" />
-            <h1>{{title}}</h1>
-            <p><em>{{author}}</em></p>
-            <p>{{isbn}}</p>
+            <div id="book-info">
+                <h1>{{title}}</h1>
+                <p><em>{{author}}</em></p>
+                <p>{{isbn}}</p>
+            </div>
         </section>
     </script>
 </head>
 <body>
-<section class="about">
+    <div id="wrapper">
+    <header>
 
-</section>
-<p>my books</p>
-<dt>Available Books:</dt><dd class="book-count"></dd>
-<section class="clearfix">
+    </header>
+    <section class="about">
+
+    </section>
+    <p>my books</p>
+        <dt>Available Books:</dt><dd class="book-count"></dd>
+    <section class="clearfix">
     <main class="book-list">
 
     </main>
-</section>
+    </section>
+    <footer>
+        
+    </footer>
+    </div>
 <script
     src="https://code.jquery.com/jquery-3.3.1.min.js"
     integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
