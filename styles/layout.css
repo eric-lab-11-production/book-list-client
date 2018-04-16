@@ -9,6 +9,11 @@
         margin: 0 auto;
     }
 
+    header {
+        background: rgb(63, 63, 63);
+        height: 5em;
+    }
+
     section {
         width: 95%;
         height: 50%;
@@ -38,5 +43,10 @@
     #book-info>p {
         color: grey;
         margin: 0 1em;
+    }
+
+    footer{
+        background: gray;
+        height: 8em;
     }
 }
