@@ -1,1 +1,98 @@
 @import 'base.css';
+@import 'icons.css';
+
+
+@media screen and (max-width: 500px) {
+
+    #wrapper {
+        width: 90%;
+        background: lightgrey;
+        margin: 0 auto;
+    }
+
+    header {
+        background: rgb(63, 63, 63);
+        height: 5em;
+    }
+
+    header>img {
+        width: 2.5em;
+        float: left;
+        margin-top: 1em;
+        margin-left: 1em;
+    }
+
+    header>p {
+        font-size: 1.3em;
+        padding-top: 1.2em;
+        padding-left: 3em;
+        color: grey;
+    }
+
+    section {
+        width: 95%;
+        height: 50%;
+        margin: 1em auto;
+    }
+
+    .about>p {
+        margin-top: 2em;
+        padding-left: 0.5em;
+        margin-bottom: 0em;
+    }
+
+    .book {
+        background: gray;
+    }
+
+    .book>img {
+        display: inline-block;
+        margin-top: 0.5em;
+        margin-left: 30%;
+        z-index: -1;
+    }
+
+    #book-info {
+        background: rgb(63, 63, 63);
+        z-index: 1
+    }
+
+    .clearfix::after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+
+    #book-info>h1 {
+        color: grey;
+        font-size: 1.2em;
+        margin: 0 0.8em;
+        padding-top: 0.7em;
+    }
+
+    #book-info>p {
+        color: grey;
+        margin: 0 1em;
+    }
+
+    #book-info>p:last-child{
+        padding-bottom: 4em;
+    }
+
+    footer{
+        background: gray;
+        height: 4em;
+    }
+
+    footer>ul li {
+        float: right;
+        list-style-type: none;
+        margin-top: 0.7em;
+        margin-right: 0.5em;
+    }
+    
+    a {
+        text-decoration: none;
+        color: rgb(63, 63, 63);
+    }
+}

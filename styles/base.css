@@ -1,1 +1,9 @@
 @import 'normalize.css';
+
+@media screen and (max-width: 500px) {
+
+    body {
+        width: 425px;
+    }
+
+}
