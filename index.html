@@ -8,7 +8,10 @@
     <link rel="stylesheet" href="styles/layout.css"/>
     <script id="book-list-template" type="text/x-handlebars-template">
         <section>
-            <li><h1>{{title}}</h1><h3>{{author}}</h3></li>
+            <img src="{{image_url}}" />
+            <h1>{{title}}</h1>
+            <p><em>{{author}}</em></p>
+            <p>{{isbn}}</p>
         </section>
     </script>
 </head>
@@ -16,11 +19,12 @@
 <section class="about">
 
 </section>
+<p>my books</p>
+<dt>Available Books:</dt><dd class="book-count"></dd>
 <section class="clearfix">
-    <dt>Available Books:</dt><dd class="book-count"></dd>
-    <ul class="book-list">
+    <main class="book-list">
 
-    </ul>
+    </main>
 </section>
 <script
     src="https://code.jquery.com/jquery-3.3.1.min.js"
